@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InputModule } from './input/input.module';
+import { InputComponent } from './input.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    InputComponent
+  ],
   imports: [
     CommonModule
   ],
   exports: [
-    InputModule
+    InputComponent
   ]
 })
-export class ControlsModule { }
+export class InputModule { }
