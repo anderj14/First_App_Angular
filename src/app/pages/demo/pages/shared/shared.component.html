@@ -16,6 +16,10 @@
         <app-password formControlName="password" ></app-password>
     </app-form-field>
 
+    <app-form-field label="Autocomplete" [required]="true" [control]="form.controls.autocomplete" [isInline]="isInline">
+        <app-autocomplete formControlName="autocomplete" [items]="items" ></app-autocomplete>
+    </app-form-field>
+
     <app-form-field label="Select" [required]="true" [control]="form.controls.select" [isInline]="isInline">
         <app-select formControlName="select" [items]="items"></app-select>
     </app-form-field>
@@ -35,5 +39,6 @@
     <app-form-field label="Date Range" [required]="true" [control]="form.controls.dateRange" [isInline]="isInline">
         <app-date-range formControlName="dateRange"></app-date-range>
     </app-form-field>
-    
+
+
 </form>
