@@ -59,6 +59,16 @@ export class SharedComponent implements OnInit {
         updateOn: 'change', validators: [
           Validators.required
         ]
+      }],
+      date: [null, {
+        updateOn: 'change', validators: [
+          Validators.required
+        ]
+      }],
+      dateRange: [null, {
+        updateOn: 'change', validators: [
+          Validators.required
+        ]
       }]
     });
   }
@@ -71,7 +81,7 @@ export class SharedComponent implements OnInit {
     console.log('Button submit pressed');
   }
 
-  organizeElement() {
+  organizeElement(): void {
     this.isInline = !this.isInline;
   }
 
